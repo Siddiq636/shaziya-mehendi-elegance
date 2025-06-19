@@ -1,4 +1,5 @@
 
+
 import { Button } from '@/components/ui/button';
 
 const HeroSection = () => {
@@ -28,12 +29,44 @@ const HeroSection = () => {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button 
+            variant="default" 
+            size="lg" 
+            className="text-lg px-8 py-3 rounded-full bg-primary text-primary-foreground hover:bg-primary/90"
+          >
+            View Gallery
+          </Button>
+          <Button 
             variant="outline" 
             size="lg" 
             className="text-lg px-8 py-3 rounded-full border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
           >
-            Watch Tutorials
+            Book Appointment
           </Button>
+        </div>
+
+        {/* Features */}
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+          <div className="text-center">
+            <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+              <span className="text-2xl">🎨</span>
+            </div>
+            <h3 className="font-playfair text-lg font-semibold text-foreground mb-1">Custom Designs</h3>
+            <p className="text-sm text-muted-foreground">Unique patterns tailored to your style</p>
+          </div>
+          <div className="text-center">
+            <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+              <span className="text-2xl">👰</span>
+            </div>
+            <h3 className="font-playfair text-lg font-semibold text-foreground mb-1">Bridal Specialist</h3>
+            <p className="text-sm text-muted-foreground">Expert in intricate bridal mehendi</p>
+          </div>
+          <div className="text-center">
+            <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+              <span className="text-2xl">🌿</span>
+            </div>
+            <h3 className="font-playfair text-lg font-semibold text-foreground mb-1">Natural Henna</h3>
+            <p className="text-sm text-muted-foreground">100% organic and skin-safe products</p>
+          </div>
         </div>
       </div>
 
@@ -45,3 +78,4 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
