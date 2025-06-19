@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Search, Menu, X, Moon, Sun } from 'lucide-react';
@@ -84,7 +83,7 @@ const Navbar = () => {
               />
             </svg>
           </div>
-          <span className="font-playfair text-xl font-bold text-gradient">
+          <span className="font-sans text-xl font-semibold tracking-wide text-foreground">
             Shaziya Mehendi
           </span>
         </Link>
