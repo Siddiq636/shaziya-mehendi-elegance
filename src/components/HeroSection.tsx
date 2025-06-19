@@ -1,7 +1,5 @@
 
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Search } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -26,17 +24,6 @@ const HeroSection = () => {
           Discover beautiful henna designs, traditional patterns, and modern techniques 
           to make your special occasions unforgettable.
         </p>
-
-        {/* Search Bar */}
-        <div className="max-w-md mx-auto mb-8">
-          <div className="relative">
-            <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-muted-foreground w-5 h-5" />
-            <Input
-              placeholder="Search mehendi designs, tutorials..."
-              className="pl-12 pr-4 py-3 text-lg border-2 border-primary/20 focus:border-primary rounded-full bg-background/80 backdrop-blur-sm"
-            />
-          </div>
-        </div>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
