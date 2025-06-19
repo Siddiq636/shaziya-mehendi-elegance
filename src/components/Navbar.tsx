@@ -39,12 +39,50 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-3">
-          <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-primary/20 flex items-center justify-center">
-            <img
-              src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=80&q=80"
-              alt="Mehendi Design"
-              className="w-full h-full object-cover"
-            />
+          <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-primary/20 flex items-center justify-center bg-gradient-to-br from-primary/20 to-secondary/20">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="text-primary"
+            >
+              {/* Mehendi leaf pattern */}
+              <path
+                d="M16 2C13 2 10 4 10 8C10 12 16 16 16 16S22 12 22 8C22 4 19 2 16 2Z"
+                fill="currentColor"
+                opacity="0.8"
+              />
+              {/* Decorative swirls */}
+              <path
+                d="M8 12C8 12 6 14 8 16C10 18 12 16 12 16"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                fill="none"
+                strokeLinecap="round"
+              />
+              <path
+                d="M20 12C20 12 22 14 20 16C18 18 16 16 16 16"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                fill="none"
+                strokeLinecap="round"
+              />
+              {/* Central dot pattern */}
+              <circle cx="16" cy="8" r="2" fill="currentColor" opacity="0.6" />
+              <circle cx="13" cy="10" r="1" fill="currentColor" opacity="0.4" />
+              <circle cx="19" cy="10" r="1" fill="currentColor" opacity="0.4" />
+              {/* Bottom flourish */}
+              <path
+                d="M16 16C16 16 14 20 16 22C18 24 20 22 20 22C20 22 18 26 16 28C14 30 12 28 12 28C12 28 14 24 16 22C16 20 16 16 16 16"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
           </div>
           <span className="font-playfair text-xl font-bold text-gradient">
             Shaziya Mehendi
